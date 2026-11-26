@@ -18,6 +18,7 @@ public class User {
     @NotBlank(message = "Last name required")
     private String lastName;
 
+    @Column(unique = true)
     @NotBlank(message = "Email required")
     private String email;
 
